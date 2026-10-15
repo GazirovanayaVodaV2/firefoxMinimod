@@ -1,0 +1,34 @@
+
+:root:not([inDOMFullscreen]) #appcontent,
+:root:not([inDOMFullscreen]) #tabbrowser-tabpanels {
+  border-top: 1px solid var(--lwt-tab-line-color, rgba(160, 130, 200, 0.45)) !important;
+  border-right: 1px solid var(--lwt-tab-line-color, rgba(160, 130, 200, 0.45)) !important;
+  border-bottom: 1px solid var(--lwt-tab-line-color, rgba(160, 130, 200, 0.45)) !important;
+  border-left: 1px solid var(--lwt-tab-line-color, rgba(160, 130, 200, 0.45)) !important;
+  border-radius: 12px !important;
+  margin: 4px !important;
+  overflow: hidden !important;
+}
+
+:root[inDOMFullscreen] #appcontent,
+:root[inDOMFullscreen] #tabbrowser-tabpanels {
+  border: none !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+}
+
+.browserSidebarContainer,
+.browserContainer {
+  border-radius: 12px !important;
+}
+
+:root[inDOMFullscreen] .browserSidebarContainer,
+:root[inDOMFullscreen] .browserContainer {
+  border-radius: 0px !important;
+}
+
+.split-pane > div, 
+.split-pane-spacer {
+  border: none !important;
+  box-shadow: none !important;
+}
