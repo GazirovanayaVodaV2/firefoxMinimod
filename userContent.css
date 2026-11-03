@@ -88,23 +88,23 @@
     }    
     .tile {
         backdrop-filter: saturate(2) blur(12px);
-        background-color: color-mix(in srgb, var(--newtab-background-color-secondary) 65%, transparent) !important;
+        background-color: rgba(255, 255, 255, 65%)!important;
     
         border-color: var(--newtab-contextual-text-primary-color) !important;
         border-width: 1px !important;
     }
     .title {
-        background-color: color-mix(in srgb, var(--newtab-background-color-secondary) 65%, transparent) !important;
+        backdrop-filter: saturate(2) blur(12px);
+        background-color: rgba(255, 255, 255, 65%) !important;
         padding-bottom: 4px;
         margin-top: 5px;
         max-height: fit-content;
         padding-top: 2px;
-        backdrop-filter: saturate(2) blur(12px);
 
         border-radius: var(--border-radius-medium) !important;
     }
     .title-label {
-        color: var(--newtab-contextual-text-primary-color) !important;
+        color: rgba(22, 22, 22, 1) !important;
         font-weight: bold;
     }
 }
